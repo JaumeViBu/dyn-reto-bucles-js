@@ -23,5 +23,5 @@
 - [x] Dado un array de strings (con palabras repetidas) imprime el numero de repeticiones de la palabra que más veces aparezca.
   - [x] Using for of + array results
 - [x] Dado un array de objetos producto (con nombre y precio) imprime un array de los objetos que sean más caros de 10.
-  - [x] Using for of
+  - [x] Using for of + array results + for in
   - [x] Using filter

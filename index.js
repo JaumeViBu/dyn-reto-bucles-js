@@ -175,28 +175,28 @@ const repeatedWordsList = [
 ];
 
 //-------------------------------------------------------------------------------------------
-// Using for of + array results
-const results = [];
-for (const word of repeatedWordsList) {
-  if (typeof results[word] === 'number') {
-    results[word]++;
-  } else {
-    results[word] = 1;
-  }
-}
+// Using for of + array results + for in
+// const results = [];
+// for (const word of repeatedWordsList) {
+//   if (typeof results[word] === 'number') {
+//     results[word]++;
+//   } else {
+//     results[word] = 1;
+//   }
+// }
 
-let mostRepeated = null;
-for (const key in results) {
-  //if not initialized, add the first key
-  if (!mostRepeated)
-    mostRepeated = key;
+// let mostRepeated = null;
+// for (const key in results) {
+//   //if not initialized, add the first key
+//   if (!mostRepeated)
+//     mostRepeated = key;
 
-  if (results[key] > results[mostRepeated])
-    mostRepeated = key
-}
+//   if (results[key] > results[mostRepeated])
+//     mostRepeated = key
+// }
 
-console.log(`Most repeated word: ${mostRepeated}`);
-console.log(`Number of repeats: ${results[mostRepeated]}`);
+// console.log(`Most repeated word: ${mostRepeated}`);
+// console.log(`Number of repeats: ${results[mostRepeated]}`);
 
 // Dado un array de objetos producto (con nombre y precio) imprime un array de los objetos que sean más caros de 10.
 const productsList = [
