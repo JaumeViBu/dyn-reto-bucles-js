@@ -14,19 +14,23 @@ const numberList = [8, 3, 6, 4, 5, 7, 1, 8, 2, 4, 9, 2, 5];
 
 let highestNumber = -Infinity;
 
+//-------------------------------------------------------------------------------------------
 //using math.max with spread
 //highestNumber = Math.max(...numberList);
 
+//-------------------------------------------------------------------------------------------
 //using for of
 // for (const number of numberList) {
 //   highestNumber = number > highestNumber ? number : highestNumber;
 // }
 
+//-------------------------------------------------------------------------------------------
 //using for each
 // numberList.forEach(number => {
 //   highestNumber = number > highestNumber ? number : highestNumber;
 // });
 
+//-------------------------------------------------------------------------------------------
 // using while
 // let i = 0;
 // while (i < numberList.length) {
@@ -38,6 +42,7 @@ let highestNumber = -Infinity;
 //   i++;
 // }
 
+//-------------------------------------------------------------------------------------------
 // using do while
 // let i = 0;
 // do {
@@ -49,7 +54,7 @@ let highestNumber = -Infinity;
 //   i++;
 // } while (i < numberList.length);
 
-
+//-------------------------------------------------------------------------------------------
 // using for
 // for (let i = 0; i < numberList.length; i++) {
 
@@ -57,9 +62,11 @@ let highestNumber = -Infinity;
 //   highestNumber = number > highestNumber ? number : highestNumber;
 // }
 
+//-------------------------------------------------------------------------------------------
 // using map
 // numberList.map(number=>highestNumber = number > highestNumber ? number : highestNumber);
 
+//-------------------------------------------------------------------------------------------
 // using reduce
 // highestNumber = numberList.reduce((prevNumber, number) => number > prevNumber ? number : prevNumber, numberList[0]);
 
