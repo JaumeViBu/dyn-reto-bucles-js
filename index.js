@@ -76,23 +76,26 @@ console.log(`Highest number: ${highestNumber}`);
 
 //-------------------------------------------------------------------------------------------
 //using for of
+// let evenSum = 0;
 // for (const number of numberList) {
 //   if (number % 2 == 0)
-//     console.log(number);
+//     evenSum += number;
 // }
+// console.log(evenSum);
 
 //-------------------------------------------------------------------------------------------
 // using for
+// let evenSum = 0;
 // for (let i = 0; i < numberList.length; i++) {
 //   if (numberList[i] % 2 == 0)
-//     console.log(numberList[i]);
-
+//     evenSum += numberList[i];
 // }
+// console.log(evenSum);
 
 //-------------------------------------------------------------------------------------------
-// using filter and spread
+// using filter and reduce
 // const evenList = numberList.filter(number => number % 2 == 0);
-// console.log(...evenList);
+// console.log(evenList.reduce((acc, number) => acc + number));
 
 
 
