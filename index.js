@@ -110,10 +110,12 @@ const mixedList = [1, 7, 'a', 3, 5, 9, 'b', 7, 3, 5, 'c', 4, 6, 5, 2, 8, 9];
 
 //-------------------------------------------------------------------------------------------
 // using for of
+// const stringArray = [];
 // for (const element of mixedList) {
 //   if (typeof element === 'string')
-//     console.log(element);
+//     stringArray.push(element);
 // }
+// console.log(...stringArray);
 
 //-------------------------------------------------------------------------------------------
 //using for
