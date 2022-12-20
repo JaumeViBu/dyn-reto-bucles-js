@@ -299,10 +299,12 @@ const randomStringsList = [
 function getStringsStartingWith(stringList, filterStr = 'a') {
 
   const result = [];
+
   stringList.forEach(string => {
     if (string.startsWith(filterStr))
       result.push(string);
   });
+
   return result;
 }
 
