@@ -11,7 +11,7 @@
 - [x] Dado un array de números imprime por consola la suma de todos los que sean pares.
   - [x] Using for of
   - [x] Using for
-  - [x] using filter and reduce
+  - [x] Using filter and reduce
 - [x] Dado un array de números y strings imprime un array de solamente los strings.
   - [x] Using filter
   - [x] Using for of
