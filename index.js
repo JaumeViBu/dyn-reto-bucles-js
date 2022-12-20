@@ -128,6 +128,7 @@ const mixedList = [1, 7, 'a', 3, 5, 9, 'b', 7, 3, 5, 'c', 4, 6, 5, 2, 8, 9];
 
 // Dado un array de strings imprime un array de solamente los strings que empiezan por ‘a’.
 
+
 const stringList = [
   'palabras',
   'raras',
@@ -159,6 +160,9 @@ const stringList = [
 //   if (str.startsWith('a'))
 //     console.log(str);
 // }
+
+//-------------------------------------------------------------------------------------------
+
 
 // Dado un array de strings (con palabras repetidas) imprime el numero de repeticiones de la palabra que más veces aparezca.
 
@@ -252,3 +256,54 @@ const productsList = [
 // Using filter
 // const priceMoreThan10 = productsList.filter(product => product.price > 10);
 // console.log(priceMoreThan10);
+
+//-------------------------------------------------------------------------------------------
+// Refactor into function
+
+//-------------------------------------------------------------------------------------------
+// Dado un array de números y strings imprime un array de solamente los strings
+
+/**
+ * Return an array containing only the strings in the given parameter
+ *
+ * @param {[]} array 
+ * @returns string[]
+ */
+function toOnlyStringArray(array) {
+
+  const onlyStrings = [];
+  for (const item of array) {
+    if (typeof item == 'string')
+      onlyStrings.push(item);
+  }
+
+  return onlyStrings
+}
+
+console.log(...toOnlyStringArray(mixedList));
+
+// Dado un array de strings imprime un array de solamente los strings que empiezan por ‘a’.
+
+const randomStringsList = [
+  'palabras',
+  'raras',
+  'aleatorias',
+  'sacadas',
+  'chistera',
+  'apresuradamente',
+  'produciendo',
+  'caos',
+  'alarma',
+];
+
+function getStringsStartingWith(stringList, filterStr = 'a') {
+
+  const result = [];
+  stringList.forEach(string => {
+    if (string.startsWith(filterStr))
+      result.push(string);
+  });
+  return result;
+}
+
+console.log(...getStringsStartingWith(randomStringsList, 'r'));
