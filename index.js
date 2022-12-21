@@ -422,15 +422,26 @@ function getHighestNumber_while(numbers) {
 
 // //-------------------------------------------------------------------------------------------
 // // using do while
-// let i = 0;
-// do {
 
-//   const number = numberList[i];
+/**
+ * Given an array of numbers, returns the highest number
+ *
+ * @param {[number]} numbers
+ * @returns The highest number in the given array
+ */
+function getHighestNumber_doWhile(numbers) {
+  let highest = -Infinity;
+  let i = 0;
+  do {
 
-//   highestNumber = number > highestNumber ? number : highestNumber;
+    const number = numbers[i];
 
-//   i++;
-// } while (i < numberList.length);
+    highest = number > highest ? number : highest;
+
+    i++;
+  } while (i < numbers.length);
+  return highest;
+}
 
 // //-------------------------------------------------------------------------------------------
 // // using for
@@ -454,3 +465,4 @@ console.log(getHighestNumber_maxSpread(numberList));
 console.log(getHighestNumber_forEach(numberList));
 console.log(getHighestNumber_forOf(numberList));
 console.log(getHighestNumber_while(numberList));
+console.log(getHighestNumber_doWhile(numberList));
