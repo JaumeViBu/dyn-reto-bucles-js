@@ -52,6 +52,6 @@
   - [x] Using filter - getStringsStartingWith_filter
 - [ ] Given a string array, with repeated words, log the number of times the most repeated word is repeated. 
   - [ ] Using for of + array results + for in
-- [ ] Given an array of product objects (with name and price), log an array with the products that cost more than 10.
+- [x] Given an array of product objects (with name and price), log an array with the products that cost more than 10.
   - [x] Using for of
-  - [ ] Using filter
+  - [x] Using filter
