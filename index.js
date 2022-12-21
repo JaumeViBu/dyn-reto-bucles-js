@@ -445,24 +445,56 @@ function getHighestNumber_doWhile(numbers) {
 
 // //-------------------------------------------------------------------------------------------
 // // using for
-// for (let i = 0; i < numberList.length; i++) {
 
-//   const number = numberList[i];
-//   highestNumber = number > highestNumber ? number : highestNumber;
-// }
+/**
+ * Given an array of numbers, returns the highest number
+ *
+ * @param {[number]} numbers
+ * @returns The highest number in the given array
+ */
+function getHighestNumber_for(numbers) {
+  let highest = -Infinity;
+  for (let i = 0; i < numbers.length; i++) {
+
+    const number = numbers[i];
+    highest = number > highest ? number : highest;
+  }
+  return highest;
+}
 
 // //-------------------------------------------------------------------------------------------
 // // using map
-// numberList.map(number=>highestNumber = number > highestNumber ? number : highestNumber);
 
+/**
+ * Given an array of numbers, returns the highest number
+ *
+ * @param {[number]} numbers
+ * @returns The highest number in the given array
+ */
+function getHighestNumber_map(numbers) {
+  let highest = -Infinity;
+  numbers.map(number => highest = number > highest ? number : highest);
+  return highest;
+}
 // //-------------------------------------------------------------------------------------------
 // // using reduce
-// highestNumber = numberList.reduce((prevNumber, number) => number > prevNumber ? number : prevNumber, numberList[0]);
 
-// console.log(`Highest number: ${highestNumber}`);
+/**
+ * Given an array of numbers, returns the highest number
+ *
+ * @param {[number]} numbers
+ * @returns The highest number in the given array
+ */
+function getHighestNumber_reduce(numbers) {
+
+  return numbers.reduce((prevNumber, number) => number > prevNumber ? number : prevNumber, numbers[0]);;
+}
 
 console.log(getHighestNumber_maxSpread(numberList));
 console.log(getHighestNumber_forEach(numberList));
 console.log(getHighestNumber_forOf(numberList));
 console.log(getHighestNumber_while(numberList));
 console.log(getHighestNumber_doWhile(numberList));
+console.log(getHighestNumber_for(numberList));
+console.log(getHighestNumber_map(numberList));
+console.log(getHighestNumber_reduce(numberList));

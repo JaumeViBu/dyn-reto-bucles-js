@@ -31,15 +31,15 @@
 <hr>
 
 - Refactor all exercises into functions
-- [ ] Given an array of numbers log into console the bigger number.
+- [x] Given an array of numbers log into console the bigger number.
   - [x] Using Math.max and spread operator - getHighestNumber_maxSpread
   - [x] Using for of - getHighestNumber_forOf
   - [x] Using foreach - getHighestNumber_forEach
   - [x] Using while
-  - [ ] Using do while
-  - [ ] Using for
-  - [ ] Using map
-  - [ ] Using reduce
+  - [x] Using do while
+  - [x] Using for
+  - [x] Using map
+  - [x] Using reduce
 - [ ] Given an array of numbers log into console the sum of all the even numbers.
 - [x] Given an array with both numbers and strings, log an array with only the strings.
   - [x] Using for of - toOnlyStringArray_forOf
