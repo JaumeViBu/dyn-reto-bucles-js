@@ -311,7 +311,7 @@ const randomStringsList = [
   'alarma',
 ];
 
-function getStringsStartingWith(stringList, filterStr = 'a') {
+function getStringsStartingWith_forEach(stringList, filterStr = 'a') {
 
   const result = [];
 
@@ -323,4 +323,4 @@ function getStringsStartingWith(stringList, filterStr = 'a') {
   return result;
 }
 
-console.log(...getStringsStartingWith(randomStringsList, 'r'));
+console.log(...getStringsStartingWith_forEach(randomStringsList, 'r'));
