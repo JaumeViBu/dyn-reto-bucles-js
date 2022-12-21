@@ -311,6 +311,13 @@ const randomStringsList = [
   'alarma',
 ];
 
+/**
+ * Returns an array with all the strings that start with a given filter string in a given array of strings 
+ *
+ * @param {*} stringList
+ * @param {string} [filterStr='a']
+ * @returns [string]
+ */
 function getStringsStartingWith_forEach(stringList, filterStr = 'a') {
 
   const result = [];
@@ -323,6 +330,13 @@ function getStringsStartingWith_forEach(stringList, filterStr = 'a') {
   return result;
 }
 
+/**
+ * Returns an array with all the strings that start with a given filter string in a given array of strings 
+ *
+ * @param {*} stringList
+ * @param {string} [filterStr='a']
+ * @returns [string]
+ */
 function getStringsStartingWith_filter(stringList, filterStr = 'a') {
 
   return stringList.filter(str => str[0] === filterStr);

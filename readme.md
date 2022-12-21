@@ -1,5 +1,8 @@
-- **RETO** ⇒ Prácticas **bucles y condicionales en Javascript** (Usad bucles for, while, do while, for of, for in, y foreach\*\*)
-- [x] Dado un array de números imprimir por consola el número mayor.
+- **RETO** ⇒ Exercises **loops & conditionals in Javascript** (Use for, while, do while, for of, for in, & foreach loops)
+
+<hr>
+
+- [x] Given an array of numbers log into console the bigger number.
   - [x] Using Math.max and spread operator
   - [x] Using for of
   - [x] Using foreach
@@ -8,20 +11,33 @@
   - [x] Using for
   - [x] Using map
   - [x] Using reduce
-- [x] Dado un array de números imprime por consola la suma de todos los que sean pares.
+- [x] Given an array of numbers log into console the sum of all the even numbers.
   - [x] Using for of
   - [x] Using for
   - [x] Using filter and reduce
-- [x] Dado un array de números y strings imprime un array de solamente los strings.
+- [x] Given an array with both numbers and strings, log an array with only the strings.
   - [x] Using filter
   - [x] Using for of
   - [x] Using for
-- [x] Dado un array de strings imprime un array de solamente los strings que empiezan por ‘a’.
+- [x] Given a string array log an array with the strings that start with 'a'.
   - [x] Using filter
   - [x] Using for
   - [x] Using for of and string.startsWith()
-- [x] Dado un array de strings (con palabras repetidas) imprime el numero de repeticiones de la palabra que más veces aparezca.
+- [x] Given a string array, with repeated words, log the number of times the most repeated word is repeated. 
   - [x] Using for of + array results + for in
-- [x] Dado un array de objetos producto (con nombre y precio) imprime un array de los objetos que sean más caros de 10.
+- [x] Given an array of product objects (with name and price), log an array with the products that cost more than 10.
   - [x] Using for of
   - [x] Using filter
+<hr>
+
+- Refactor all exercises into functions
+- [ ] Given an array of numbers log into console the bigger number.
+- [ ] Given an array of numbers log into console the sum of all the even numbers.
+- [x] Given an array with both numbers and strings, log an array with only the strings.
+  - [x] Using for of - toOnlyStringArray_forOf
+  - [x] Using filter - toOnlyStringArray_filter
+- [x] Given a string array log an array with the strings that start with 'a'.
+  - [x] Using foreach - getStringsStartingWith_forEach
+  - [x] Using filter - getStringsStartingWith_filter
+- [ ] Given a string array, with repeated words, log the number of times the most repeated word is repeated. 
+- [ ] Given an array of product objects (with name and price), log an array with the products that cost more than 10.
