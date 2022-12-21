@@ -323,4 +323,10 @@ function getStringsStartingWith_forEach(stringList, filterStr = 'a') {
   return result;
 }
 
+function getStringsStartingWith_filter(stringList, filterStr = 'a') {
+
+  return stringList.filter(str => str[0] === filterStr);
+}
+
 console.log(...getStringsStartingWith_forEach(randomStringsList, 'r'));
+console.log(...getStringsStartingWith_filter(randomStringsList, 'r'));
