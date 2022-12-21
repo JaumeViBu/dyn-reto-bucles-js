@@ -41,6 +41,9 @@
   - [x] Using map
   - [x] Using reduce
 - [ ] Given an array of numbers log into console the sum of all the even numbers.
+  - [ ] Using for of
+  - [ ] Using for
+  - [ ] Using filter and reduce
 - [x] Given an array with both numbers and strings, log an array with only the strings.
   - [x] Using for of - toOnlyStringArray_forOf
   - [x] Using filter - toOnlyStringArray_filter
@@ -48,4 +51,7 @@
   - [x] Using foreach - getStringsStartingWith_forEach
   - [x] Using filter - getStringsStartingWith_filter
 - [ ] Given a string array, with repeated words, log the number of times the most repeated word is repeated. 
+  - [ ] Using for of + array results + for in
 - [ ] Given an array of product objects (with name and price), log an array with the products that cost more than 10.
+  - [ ] Using for of
+  - [ ] Using filter
