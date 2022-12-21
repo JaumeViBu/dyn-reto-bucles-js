@@ -345,6 +345,7 @@ function getStringsStartingWith_filter(stringList, filterStr = 'a') {
 console.log(...getStringsStartingWith_forEach(randomStringsList, 'r'));
 console.log(...getStringsStartingWith_filter(randomStringsList, 'r'));
 
+//-------------------------------------------------------------------------------------------
 //Given an array of numbers log into console the highest number.
 
 //-------------------------------------------------------------------------------------------
@@ -361,8 +362,8 @@ function getHighestNumber_maxSpread(numbers) {
   return Math.max(...numbers);
 }
 
-// //-------------------------------------------------------------------------------------------
-// //using for of
+//-------------------------------------------------------------------------------------------
+//using for of
 
 /**
  * Given an array of numbers, returns the highest number
@@ -379,8 +380,8 @@ function getHighestNumber_forOf(numbers) {
 }
 
 
-// //-------------------------------------------------------------------------------------------
-// //using for each
+//-------------------------------------------------------------------------------------------
+//using for each
 
 /**
  * Given an array of numbers, returns the highest number
@@ -396,8 +397,8 @@ function getHighestNumber_forEach(numbers) {
   return highest;
 }
 
-// //-------------------------------------------------------------------------------------------
-// // using while
+//-------------------------------------------------------------------------------------------
+// using while
 
 
 /**
@@ -420,8 +421,8 @@ function getHighestNumber_while(numbers) {
   return highest;
 }
 
-// //-------------------------------------------------------------------------------------------
-// // using do while
+//-------------------------------------------------------------------------------------------
+// using do while
 
 /**
  * Given an array of numbers, returns the highest number
@@ -443,8 +444,8 @@ function getHighestNumber_doWhile(numbers) {
   return highest;
 }
 
-// //-------------------------------------------------------------------------------------------
-// // using for
+//-------------------------------------------------------------------------------------------
+// using for
 
 /**
  * Given an array of numbers, returns the highest number
@@ -462,8 +463,8 @@ function getHighestNumber_for(numbers) {
   return highest;
 }
 
-// //-------------------------------------------------------------------------------------------
-// // using map
+//-------------------------------------------------------------------------------------------
+// using map
 
 /**
  * Given an array of numbers, returns the highest number
@@ -476,8 +477,8 @@ function getHighestNumber_map(numbers) {
   numbers.map(number => highest = number > highest ? number : highest);
   return highest;
 }
-// //-------------------------------------------------------------------------------------------
-// // using reduce
+//-------------------------------------------------------------------------------------------
+// using reduce
 
 /**
  * Given an array of numbers, returns the highest number
@@ -498,3 +499,33 @@ console.log(getHighestNumber_doWhile(numberList));
 console.log(getHighestNumber_for(numberList));
 console.log(getHighestNumber_map(numberList));
 console.log(getHighestNumber_reduce(numberList));
+
+//-------------------------------------------------------------------------------------------
+//Given an array of product objects (with name and price), log an array with the products that cost more than 10.
+//-------------------------------------------------------------------------------------------
+// Using for of
+
+/**
+ * Given a list of product objects, each with name and price, returns an array with the prodcts with a price higher that the given price floor
+ *
+ * @param {[product]} listOfProducts
+ * @param {number} [priceFloor=10]
+ * @returns Array of products that cost more than the given price floor
+ */
+function getProductsPriceOverX_forOf(listOfProducts, priceFloor = 10) {
+  const priceMoreThanX = [];
+  for (const product of listOfProducts) {
+    if (product.price > priceFloor)
+      priceMoreThanX.push(product);
+  }
+  return priceMoreThanX;
+}
+
+
+
+//-------------------------------------------------------------------------------------------
+// Using filter
+// const priceMoreThan10 = productsList.filter(product => product.price > 10);
+// console.log(priceMoreThan10);
+
+console.log(getProductsPriceOverX_forOf(productsList));
