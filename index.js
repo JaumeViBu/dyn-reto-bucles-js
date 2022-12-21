@@ -344,3 +344,99 @@ function getStringsStartingWith_filter(stringList, filterStr = 'a') {
 
 console.log(...getStringsStartingWith_forEach(randomStringsList, 'r'));
 console.log(...getStringsStartingWith_filter(randomStringsList, 'r'));
+
+//Given an array of numbers log into console the highest number.
+
+//-------------------------------------------------------------------------------------------
+//using math.max with spread
+
+/**
+ * Given an array of numbers, returns the highest number
+ *
+ * @param {[number]} numbers
+ * @returns The highest number in the given array
+ */
+function getHighestNumber_maxSpread(numbers) {
+
+  return Math.max(...numbers);
+}
+
+// //-------------------------------------------------------------------------------------------
+// //using for of
+
+/**
+ * Given an array of numbers, returns the highest number
+ *
+ * @param {[number]} numbers
+ * @returns The highest number in the given array
+ */
+function getHighestNumber_forOf(numbers) {
+  let highest = -Infinity;
+  for (const number of numbers) {
+    highest = number > highest ? number : highest;
+  }
+  return highest;
+}
+
+
+// //-------------------------------------------------------------------------------------------
+// //using for each
+
+
+/**
+ * Given an array of numbers, returns the highest number
+ *
+ * @param {[number]} numbers
+ * @returns The highest number in the given array
+ */
+function getHighestNumber_forEach(numbers) {
+  let highest = -Infinity;
+  numbers.forEach(number => {
+    highest = number > highest ? number : highest;
+  });
+  return highest;
+}
+
+// //-------------------------------------------------------------------------------------------
+// // using while
+// let i = 0;
+// while (i < numberList.length) {
+
+//   const number = numberList[i];
+
+//   highestNumber = number > highestNumber ? number : highestNumber;
+
+//   i++;
+// }
+
+// //-------------------------------------------------------------------------------------------
+// // using do while
+// let i = 0;
+// do {
+
+//   const number = numberList[i];
+
+//   highestNumber = number > highestNumber ? number : highestNumber;
+
+//   i++;
+// } while (i < numberList.length);
+
+// //-------------------------------------------------------------------------------------------
+// // using for
+// for (let i = 0; i < numberList.length; i++) {
+
+//   const number = numberList[i];
+//   highestNumber = number > highestNumber ? number : highestNumber;
+// }
+
+// //-------------------------------------------------------------------------------------------
+// // using map
+// numberList.map(number=>highestNumber = number > highestNumber ? number : highestNumber);
+
+// //-------------------------------------------------------------------------------------------
+// // using reduce
+// highestNumber = numberList.reduce((prevNumber, number) => number > prevNumber ? number : prevNumber, numberList[0]);
+
+// console.log(`Highest number: ${highestNumber}`);
+
+console.log(getHighestNumber_maxSpread(numberList));

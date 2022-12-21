@@ -1,4 +1,4 @@
-- **RETO** ⇒ Exercises **loops & conditionals in Javascript** (Use for, while, do while, for of, for in, & foreach loops)
+- **Challenge** ⇒ Exercises **loops & conditionals in Javascript** (Use for, while, do while, for of, for in, & foreach loops)
 
 <hr>
 
