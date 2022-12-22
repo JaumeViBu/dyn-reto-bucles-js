@@ -35,11 +35,11 @@
   - [x] Using Math.max and spread operator - getHighestNumber_maxSpread
   - [x] Using for of - getHighestNumber_forOf
   - [x] Using foreach - getHighestNumber_forEach
-  - [x] Using while
-  - [x] Using do while
-  - [x] Using for
-  - [x] Using map
-  - [x] Using reduce
+  - [x] Using while - getHighestNumber_while
+  - [x] Using do while - getHighestNumber_doWhile
+  - [x] Using for - getHighestNumber_for
+  - [x] Using map - getHighestNumber_map
+  - [x] Using reduce - getHighestNumber_reduce
 - [x] Given an array of numbers log into console the sum of all the even numbers.
   - [x] Using for of
   - [x] Using for
