@@ -1,4 +1,5 @@
 import * as highestNumber from './highestNumber.js';
+import * as onlyStringArray from './onlyStringArray.js';
 
 
 const numberList = [8, 3, 6, 4, 5, 7, 1, 8, 2, 4, 9, 2, 5];
@@ -80,6 +81,7 @@ const randomStringsList = [
 
 // highestNumber
 console.log('Highest number module tests:');
+console.log(`numberList: ${numberList}`);
 console.log(highestNumber.getHighestNumber_maxSpread(numberList));
 console.log(highestNumber.getHighestNumber_forEach(numberList));
 console.log(highestNumber.getHighestNumber_forOf(numberList));
@@ -88,48 +90,14 @@ console.log(highestNumber.getHighestNumber_doWhile(numberList));
 console.log(highestNumber.getHighestNumber_for(numberList));
 console.log(highestNumber.getHighestNumber_map(numberList));
 console.log(highestNumber.getHighestNumber_reduce(numberList));
-console.log('End of Highest number module tests');
+console.log('End of Highest number module tests\n\n\n');
 
-//-------------------------------------------------------------------------------------------
-// Given an array with both numbers and strings, log an array with only the strings.
-//-------------------------------------------------------------------------------------------
-// Using for of
-
-/**
- * Return an array containing only the strings in the given parameter
- *
- * @param {[string]} array 
- * @returns [string]
- */
-function toOnlyStringArray_forOf(array) {
-
-  const onlyStrings = [];
-  for (const item of array) {
-    if (typeof item == 'string')
-      onlyStrings.push(item);
-  }
-
-  return onlyStrings
-}
-
-//-------------------------------------------------------------------------------------------
-// Using filter
-
-/**
- * Return an array containing only the strings in the given parameter
- *
- * @param {[string]} array 
- * @returns [string]
- */
-function toOnlyStringArray_filter(array) {
-
-  return array.filter(element => typeof element == 'string');
-}
-
-
-console.log(...toOnlyStringArray_forOf(mixedList));
-console.log(...toOnlyStringArray_filter(mixedList));
-
+//onlyStringArray
+console.log('Only string array tests:');
+console.log(`mixedList: ${mixedList}`);
+console.log(...onlyStringArray.toOnlyStringArray_forOf(mixedList));
+console.log(...onlyStringArray.toOnlyStringArray_filter(mixedList));
+console.log('End of Only string array tests\n\n\n');
 
 
 
