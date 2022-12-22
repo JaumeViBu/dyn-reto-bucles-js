@@ -602,3 +602,54 @@ function getSumOfEvens_reduce(listOfNumbers) {
 console.log(getSumOfEvens_forOf(numberList));
 console.log(getSumOfEvens_for(numberList));
 console.log(getSumOfEvens_reduce(numberList));
+
+//-------------------------------------------------------------------------------------------
+// Given a string array, with repeated words, log the number of times the most repeated word is repeated.
+//-------------------------------------------------------------------------------------------
+// Using for of + array results + for in
+/**
+ * Given an array with repeated words, returns the most repeated one
+ *
+ * @param {[syting]} listOfWords
+ * @returns string
+ */
+function getMostRepeatedWord_forOf_forIn(listOfWords) {
+
+  let mostRepeated;
+  const results = getRepeatedWordsCounter(listOfWords);
+
+  for (const key in results) {
+    //if not initialized, add the first key
+    if (!mostRepeated)
+      mostRepeated = key;
+
+    if (results[key] > results[mostRepeated])
+      mostRepeated = key
+  }
+  return mostRepeated;
+}
+
+/**
+ * Given an array with reapeated words, returns and array with the keys equal to each different 
+ * word and the value equal to the number of times it's been repeated
+ *
+ * @param {[string]} listOfWords
+ * @returns [string]
+ */
+function getRepeatedWordsCounter(listOfWords) {
+
+  const results = [];
+  for (const word of listOfWords) {
+    if (typeof results[word] === 'number') {
+      results[word]++;
+    } else {
+      results[word] = 1;
+    }
+  }
+  return results;
+}
+
+
+
+console.log(`Most repeated word: ${getMostRepeatedWord_forOf_forIn(repeatedWordsList)}`);
+console.log(`Number of repeats: ${getRepeatedWordsCounter(repeatedWordsList)[getMostRepeatedWord_forOf_forIn(repeatedWordsList)]}`);
