@@ -564,20 +564,49 @@ function getSumOfEvens_forOf(listOfNumbers) {
   return evenSum;
 }
 
+//-------------------------------------------------------------------------------------------
+// using for
 
 
-// //-------------------------------------------------------------------------------------------
-// // using for
-// let evenSum = 0;
-// for (let i = 0; i < numberList.length; i++) {
-//   if (numberList[i] % 2 == 0)
-//     evenSum += numberList[i];
-// }
-// console.log(evenSum);
+/**
+ * Given an array of numberes, returns the sum of all the even numbers contained within
+ *
+ * @param {[number]} listOfNumbers
+ * @returns Number - A sum of all the even numbers contained in the given array
+ */
+function getSumOfEvens_for(listOfNumbers) {
+
+  let evenSum = 0;
+  for (let i = 0; i < listOfNumbers.length; i++) {
+    if (listOfNumbers[i] % 2 == 0)
+      evenSum += listOfNumbers[i];
+  }
+
+  return evenSum;
+}
 
 // //-------------------------------------------------------------------------------------------
 // // using filter and reduce
 // const evenList = numberList.filter(number => number % 2 == 0);
 // console.log(evenList.reduce((acc, number) => acc + number));
 
+/**
+ * Given an array of numberes, returns the sum of all the even numbers contained within
+ *
+ * @param {[number]} listOfNumbers
+ * @returns Number - A sum of all the even numbers contained in the given array
+ */
+function getSumOfEvens_for(listOfNumbers) {
+
+  let evenSum = 0;
+  for (let i = 0; i < listOfNumbers.length; i++) {
+    if (listOfNumbers[i] % 2 == 0)
+      evenSum += listOfNumbers[i];
+  }
+
+  return evenSum;
+}
+
 console.log(getSumOfEvens_forOf(numberList));
+console.log(getSumOfEvens_for(numberList));
+console.log(getSumOfEvens_reduce(numberList));
