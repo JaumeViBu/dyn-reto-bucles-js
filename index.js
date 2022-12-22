@@ -585,10 +585,8 @@ function getSumOfEvens_for(listOfNumbers) {
   return evenSum;
 }
 
-// //-------------------------------------------------------------------------------------------
-// // using filter and reduce
-// const evenList = numberList.filter(number => number % 2 == 0);
-// console.log(evenList.reduce((acc, number) => acc + number));
+//-------------------------------------------------------------------------------------------
+// using filter and reduce
 
 /**
  * Given an array of numberes, returns the sum of all the even numbers contained within
@@ -596,15 +594,9 @@ function getSumOfEvens_for(listOfNumbers) {
  * @param {[number]} listOfNumbers
  * @returns Number - A sum of all the even numbers contained in the given array
  */
-function getSumOfEvens_for(listOfNumbers) {
+function getSumOfEvens_reduce(listOfNumbers) {
 
-  let evenSum = 0;
-  for (let i = 0; i < listOfNumbers.length; i++) {
-    if (listOfNumbers[i] % 2 == 0)
-      evenSum += listOfNumbers[i];
-  }
-
-  return evenSum;
+  return listOfNumbers.filter(number => number % 2 == 0).reduce((acc, number) => acc + number);
 }
 
 console.log(getSumOfEvens_forOf(numberList));
