@@ -542,3 +542,42 @@ function getProductsPriceOverX_filter(listOfProducts, priceFloor = 10) {
 
 console.log(getProductsPriceOverX_forOf(productsList));
 console.log(getProductsPriceOverX_filter(productsList));
+
+//-------------------------------------------------------------------------------------------
+// Given an array of numbers log into console the sum of all the even numbers.
+//-------------------------------------------------------------------------------------------
+//using for of
+
+/**
+ * Given an array of numberes, returns the sum of all the even numbers contained within
+ *
+ * @param {[number]} listOfNumbers
+ * @returns Number - A sum of all the even numbers contained in the given array
+ */
+function getSumOfEvens_forOf(listOfNumbers) {
+
+  let evenSum = 0; for (const number of listOfNumbers) {
+
+    evenSum += number % 2 == 0 ? number : 0;
+  }
+
+  return evenSum;
+}
+
+
+
+// //-------------------------------------------------------------------------------------------
+// // using for
+// let evenSum = 0;
+// for (let i = 0; i < numberList.length; i++) {
+//   if (numberList[i] % 2 == 0)
+//     evenSum += numberList[i];
+// }
+// console.log(evenSum);
+
+// //-------------------------------------------------------------------------------------------
+// // using filter and reduce
+// const evenList = numberList.filter(number => number % 2 == 0);
+// console.log(evenList.reduce((acc, number) => acc + number));
+
+console.log(getSumOfEvens_forOf(numberList));
