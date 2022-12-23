@@ -4,6 +4,7 @@ import * as sumOfEvens from './modules/sumOfEvens.js';
 import * as startsWithX from './modules/startsWithX.js';
 import * as productsOverXPrice from './modules/productsOverXPrice.js';
 import * as mostRepeatedWord from './modules/mostRepeatedWord.js';
+import * as taskManager from './modules/taksManager.js';
 
 
 const numberList = [8, 3, 6, 4, 5, 7, 1, 8, 2, 4, 9, 2, 5];
@@ -147,3 +148,8 @@ const taskList = [
     isDone: false,
   }
 ];
+
+console.log('Task manager tests:');
+console.log(taskManager.getDoneTasks_filter(taskList));
+console.log(taskManager.getDoneTasks_forOf(taskList));
+console.log('End of Task manager tests\n\n\n');
