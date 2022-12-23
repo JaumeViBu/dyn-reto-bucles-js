@@ -6,6 +6,7 @@ import * as productsOverXPrice from './modules/productsOverXPrice.js';
 import * as mostRepeatedWord from './modules/mostRepeatedWord.js';
 import * as taskManager from './modules/tasksManager.js';
 import * as productSorter from './modules/productsSorter.js';
+import * as userManager from './modules/userManager.js';
 
 
 const numberList = [8, 3, 6, 4, 5, 7, 1, 8, 2, 4, 9, 2, 5];
@@ -194,3 +195,30 @@ console.log('Product sorter tests:');
 console.log(productSorter.sortByPriceAsc_sort(unsortedProductsList));
 console.log(productSorter.sortByPriceAsc_forBubleSort(unsortedProductsList));
 console.log('End of Product sorter tests\n\n\n');
+
+const users = [
+  {
+    name: 'javibu',
+    role: 'user',
+  },
+  {
+    name: 'servir',
+    role: 'admin',
+  },
+  {
+    name: 'ancer',
+    role: 'admin',
+  },
+  {
+    name: 'badr',
+    role: 'user',
+  },
+  {
+    name: 'aneeb',
+    role: 'user',
+  },
+];
+
+console.log('User manager tests:');
+console.log(userManager.sortAdmins(users));
+console.log('End of User manager tests\n\n\n');
