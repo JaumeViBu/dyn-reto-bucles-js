@@ -1,5 +1,6 @@
 import * as highestNumber from './highestNumber.js';
 import * as onlyStringArray from './onlyStringArray.js';
+import * as sumOfEvens from './sumOfEvens.js';
 
 
 const numberList = [8, 3, 6, 4, 5, 7, 1, 8, 2, 4, 9, 2, 5];
@@ -99,7 +100,12 @@ console.log(...onlyStringArray.toOnlyStringArray_forOf(mixedList));
 console.log(...onlyStringArray.toOnlyStringArray_filter(mixedList));
 console.log('End of Only string array tests\n\n\n');
 
-
+//sumOfEvens
+console.log('Sum of evens tests:');
+console.log(sumOfEvens.getSumOfEvens_forOf(numberList));
+console.log(sumOfEvens.getSumOfEvens_for(numberList));
+console.log(sumOfEvens.getSumOfEvens_reduce(numberList));
+console.log('End of Sum of evens tests\n\n\n');
 
 
 //-------------------------------------------------------------------------------------------
@@ -188,65 +194,9 @@ function getProductsPriceOverX_filter(listOfProducts, priceFloor = 10) {
 console.log(getProductsPriceOverX_forOf(productsList));
 console.log(getProductsPriceOverX_filter(productsList));
 
-//-------------------------------------------------------------------------------------------
-// Given an array of numbers log into console the sum of all the even numbers.
-//-------------------------------------------------------------------------------------------
-//using for of
-
-/**
- * Given an array of numberes, returns the sum of all the even numbers contained within
- *
- * @param {[number]} listOfNumbers
- * @returns Number - A sum of all the even numbers contained in the given array
- */
-function getSumOfEvens_forOf(listOfNumbers) {
-
-  let evenSum = 0; for (const number of listOfNumbers) {
-
-    evenSum += number % 2 == 0 ? number : 0;
-  }
-
-  return evenSum;
-}
-
-//-------------------------------------------------------------------------------------------
-// using for
 
 
-/**
- * Given an array of numberes, returns the sum of all the even numbers contained within
- *
- * @param {[number]} listOfNumbers
- * @returns Number - A sum of all the even numbers contained in the given array
- */
-function getSumOfEvens_for(listOfNumbers) {
 
-  let evenSum = 0;
-  for (let i = 0; i < listOfNumbers.length; i++) {
-    if (listOfNumbers[i] % 2 == 0)
-      evenSum += listOfNumbers[i];
-  }
-
-  return evenSum;
-}
-
-//-------------------------------------------------------------------------------------------
-// using filter and reduce
-
-/**
- * Given an array of numberes, returns the sum of all the even numbers contained within
- *
- * @param {[number]} listOfNumbers
- * @returns Number - A sum of all the even numbers contained in the given array
- */
-function getSumOfEvens_reduce(listOfNumbers) {
-
-  return listOfNumbers.filter(number => number % 2 == 0).reduce((acc, number) => acc + number);
-}
-
-console.log(getSumOfEvens_forOf(numberList));
-console.log(getSumOfEvens_for(numberList));
-console.log(getSumOfEvens_reduce(numberList));
 
 //-------------------------------------------------------------------------------------------
 // Given a string array, with repeated words, log the number of times the most repeated word is repeated.
