@@ -65,3 +65,11 @@
 - [x] Given a string array log an array with the strings that start with x string passed as param
 - [x] Given a string array, with repeated words, log the number of times the most repeated word is repeated 
 - [x] Given an array of product objects (with name and price), log an array with the products that cost more than 10
+
+<hr>
+
+- 4th iteration - Sort files in folders and add following functions
+- [x] Create a better folder structure and sort existing files in it.
+- [ ] Given an array of 'task' objects (with attributes: title <string> / isDone <bool>), returns another list only with the tasks already done -> .js 
+- [ ] Given a list of products objects(each with name <string> and price <number>), returns another list with the products sorted from less to most price -> .js
+- [ ] Given a list of user objects(each with name <string> and role<string>), returns another list containing only the admin users, alphabetically sorted by name -> .js

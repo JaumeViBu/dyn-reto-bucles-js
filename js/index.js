@@ -1,9 +1,9 @@
-import * as highestNumber from './highestNumber.js';
-import * as onlyStringArray from './onlyStringArray.js';
-import * as sumOfEvens from './sumOfEvens.js';
-import * as startsWithX from './startsWithX.js';
-import * as productsOverXPrice from './productsOverXPrice.js';
-import * as mostRepeatedWord from './mostRepeatedWord.js';
+import * as highestNumber from './modules/highestNumber.js';
+import * as onlyStringArray from './modules/onlyStringArray.js';
+import * as sumOfEvens from './modules/sumOfEvens.js';
+import * as startsWithX from './modules/startsWithX.js';
+import * as productsOverXPrice from './modules/productsOverXPrice.js';
+import * as mostRepeatedWord from './modules/mostRepeatedWord.js';
 
 
 const numberList = [8, 3, 6, 4, 5, 7, 1, 8, 2, 4, 9, 2, 5];
@@ -127,3 +127,23 @@ console.log('Most repeated word tests:');
 console.log(`Most repeated word: ${mostRepeatedWord.getMostRepeatedWord_forOf_forIn(repeatedWordsList)}`);
 console.log(`Number of repeats: ${mostRepeatedWord.getRepeatedWordsCounter(repeatedWordsList)[mostRepeatedWord.getMostRepeatedWord_forOf_forIn(repeatedWordsList)]}`);
 console.log('End of Most repeated word tests\n\n\n');
+
+// Fourth iteration
+const taskList = [
+  {
+    title: 'Complete 4th iteration js challenge 01',
+    isDone: false,
+  },
+  {
+    title: 'Complete Sprint 2 of CoolDeco project',
+    isDone: true,
+  },
+  {
+    title: 'Fundaula PSeInt course',
+    isDone: true,
+  },
+  {
+    title: 'OpenBootcamp Html & CSS course',
+    isDone: false,
+  }
+];
