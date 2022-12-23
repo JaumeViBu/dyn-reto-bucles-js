@@ -60,8 +60,8 @@
 
 - 3rd iteration - Refactor all functions into modules
 - [x] Given an array of numbers log into console the bigger number -> highestNumber.js 
-- [ ] Given an array of numbers log into console the sum of all the even numbers
+- [x] Given an array of numbers log into console the sum of all the even numbers -> sumOfEvens.js
 - [x] Given an array with both numbers and strings, log an array with only the strings -> onlyStringArray.js
-- [ ] Given a string array log an array with the strings that start with 'a'
+- [x] Given a string array log an array with the strings that start with x string passed as param
 - [ ] Given a string array, with repeated words, log the number of times the most repeated word is repeated 
 - [ ] Given an array of product objects (with name and price), log an array with the products that cost more than 10

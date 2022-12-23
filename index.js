@@ -1,6 +1,7 @@
 import * as highestNumber from './highestNumber.js';
 import * as onlyStringArray from './onlyStringArray.js';
 import * as sumOfEvens from './sumOfEvens.js';
+import * as startsWithX from './startsWithX.js';
 
 
 const numberList = [8, 3, 6, 4, 5, 7, 1, 8, 2, 4, 9, 2, 5];
@@ -96,8 +97,8 @@ console.log('End of Highest number module tests\n\n\n');
 //onlyStringArray
 console.log('Only string array tests:');
 console.log(`mixedList: ${mixedList}`);
-console.log(...onlyStringArray.toOnlyStringArray_forOf(mixedList));
-console.log(...onlyStringArray.toOnlyStringArray_filter(mixedList));
+console.log(onlyStringArray.toOnlyStringArray_forOf(mixedList));
+console.log(onlyStringArray.toOnlyStringArray_filter(mixedList));
 console.log('End of Only string array tests\n\n\n');
 
 //sumOfEvens
@@ -107,49 +108,11 @@ console.log(sumOfEvens.getSumOfEvens_for(numberList));
 console.log(sumOfEvens.getSumOfEvens_reduce(numberList));
 console.log('End of Sum of evens tests\n\n\n');
 
-
-//-------------------------------------------------------------------------------------------
-//Given a string array, log an array with the strings that start with 'a'.
-
-//-------------------------------------------------------------------------------------------
-// Using foreach
-
-/**
- * Returns an array with all the strings that start with a given filter string in a given array of strings 
- *
- * @param {*} stringList
- * @param {string} [filterStr='a']
- * @returns [string]
- */
-function getStringsStartingWith_forEach(stringList, filterStr = 'a') {
-
-  const result = [];
-
-  stringList.forEach(string => {
-    if (string.startsWith(filterStr))
-      result.push(string);
-  });
-
-  return result;
-}
-
-//-------------------------------------------------------------------------------------------
-// Using filter
-
-/**
- * Returns an array with all the strings that start with a given filter string in a given array of strings 
- *
- * @param {*} stringList
- * @param {string} [filterStr='a']
- * @returns [string]
- */
-function getStringsStartingWith_filter(stringList, filterStr = 'a') {
-
-  return stringList.filter(str => str[0] === filterStr);
-}
-
-console.log(...getStringsStartingWith_forEach(randomStringsList, 'r'));
-console.log(...getStringsStartingWith_filter(randomStringsList, 'r'));
+//startsWithX
+console.log('Starts with X tests:');
+console.log(startsWithX.getStringsStartingWith_forEach(randomStringsList, 'a'));
+console.log(startsWithX.getStringsStartingWith_filter(randomStringsList, 'a'));
+console.log('End of Starts with X tests\n\n\n');
 
 
 
