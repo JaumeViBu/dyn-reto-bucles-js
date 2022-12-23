@@ -70,8 +70,10 @@
 
 - 4th iteration - Sort files in folders and add following functions
 - [x] Create a better folder structure and sort existing files in it.
-- [x] Given an array of 'task' objects (with attributes: title <string> / isDone <bool>), returns another list only with the tasks already done -> taksManager.js 
+- [x] Given an array of 'task' objects (with attributes: title <string> / isDone <bool>), returns another list only with the tasks already done -> tasksManager.js 
   - [x] Using filter
   - [x] Using for of
-- [ ] Given a list of products objects(each with name <string> and price <number>), returns another list with the products sorted from less to most price -> .js
+- [x] Given a list of products objects(each with name <string> and price <number>), returns another list with the products sorted from less to most price -> .js
+  - [x] Using sort
+  - [x] Using for + buble sort
 - [ ] Given a list of user objects(each with name <string> and role<string>), returns another list containing only the admin users, alphabetically sorted by name -> .js

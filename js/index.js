@@ -4,7 +4,8 @@ import * as sumOfEvens from './modules/sumOfEvens.js';
 import * as startsWithX from './modules/startsWithX.js';
 import * as productsOverXPrice from './modules/productsOverXPrice.js';
 import * as mostRepeatedWord from './modules/mostRepeatedWord.js';
-import * as taskManager from './modules/taksManager.js';
+import * as taskManager from './modules/tasksManager.js';
+import * as productSorter from './modules/productsSorter.js';
 
 
 const numberList = [8, 3, 6, 4, 5, 7, 1, 8, 2, 4, 9, 2, 5];
@@ -153,3 +154,43 @@ console.log('Task manager tests:');
 console.log(taskManager.getDoneTasks_filter(taskList));
 console.log(taskManager.getDoneTasks_forOf(taskList));
 console.log('End of Task manager tests\n\n\n');
+
+const unsortedProductsList = [
+  {
+    name: 'Product a',
+    price: 10,
+  },
+  {
+    name: 'Product z',
+    price: 11,
+  },
+  {
+    name: 'Product m',
+    price: 9,
+  },
+  {
+    name: 'Product d',
+    price: 12,
+  },
+  {
+    name: 'Product b',
+    price: 7,
+  },
+  {
+    name: 'Product c',
+    price: 8,
+  },
+  {
+    name: 'Product y',
+    price: 5,
+  },
+  {
+    name: 'Product x',
+    price: 15,
+  },
+];
+
+console.log('Product sorter tests:');
+console.log(productSorter.sortByPriceAsc_sort(unsortedProductsList));
+console.log(productSorter.sortByPriceAsc_forBubleSort(unsortedProductsList));
+console.log('End of Product sorter tests\n\n\n');
