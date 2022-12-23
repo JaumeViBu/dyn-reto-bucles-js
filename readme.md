@@ -64,4 +64,4 @@
 - [x] Given an array with both numbers and strings, log an array with only the strings -> onlyStringArray.js
 - [x] Given a string array log an array with the strings that start with x string passed as param
 - [ ] Given a string array, with repeated words, log the number of times the most repeated word is repeated 
-- [ ] Given an array of product objects (with name and price), log an array with the products that cost more than 10
+- [x] Given an array of product objects (with name and price), log an array with the products that cost more than 10

@@ -2,6 +2,7 @@ import * as highestNumber from './highestNumber.js';
 import * as onlyStringArray from './onlyStringArray.js';
 import * as sumOfEvens from './sumOfEvens.js';
 import * as startsWithX from './startsWithX.js';
+import * as productsOverXPrice from './productsOverXPrice.js';
 
 
 const numberList = [8, 3, 6, 4, 5, 7, 1, 8, 2, 4, 9, 2, 5];
@@ -114,48 +115,12 @@ console.log(startsWithX.getStringsStartingWith_forEach(randomStringsList, 'a'));
 console.log(startsWithX.getStringsStartingWith_filter(randomStringsList, 'a'));
 console.log('End of Starts with X tests\n\n\n');
 
+//productsOverXPrice
+console.log('Products over X price tests:');
+console.log(productsOverXPrice.getProductsPriceOverX_forOf(productsList));
+console.log(productsOverXPrice.getProductsPriceOverX_filter(productsList));
+console.log('End of Products over X price tests\n\n\n');
 
-
-//-------------------------------------------------------------------------------------------
-//Given an array of product objects (with name and price), log an array with the products that cost more than 10.
-//-------------------------------------------------------------------------------------------
-// Using for of
-
-/**
- * Given a list of product objects, each with name and price, returns an array with the prodcts with a price higher that the given price floor
- *
- * @param {[product]} listOfProducts
- * @param {number} [priceFloor=10]
- * @returns Array of products that cost more than the given price floor
- */
-function getProductsPriceOverX_forOf(listOfProducts, priceFloor = 10) {
-  const priceMoreThanX = [];
-  for (const product of listOfProducts) {
-    if (product.price > priceFloor)
-      priceMoreThanX.push(product);
-  }
-  return priceMoreThanX;
-}
-
-
-
-//-------------------------------------------------------------------------------------------
-// Using filter
-
-/**
- * Given a list of product objects, each with name and price, returns an array with the prodcts with a price higher that the given price floor
- *
- * @param {[product]} listOfProducts
- * @param {number} [priceFloor=10]
- * @returns Array of products that cost more than the given price floor
- */
-function getProductsPriceOverX_filter(listOfProducts, priceFloor = 10) {
-
-  return listOfProducts.filter(product => product.price > priceFloor);
-}
-
-console.log(getProductsPriceOverX_forOf(productsList));
-console.log(getProductsPriceOverX_filter(productsList));
 
 
 
